@@ -65,7 +65,7 @@ module.exports = () => {
     eslint: {
       dirs: ['app', 'components', 'layouts', 'scripts'],
     },
-    basePath: "/harissetiyono.github.io",
+    // basePath: "/harissetiyono.github.io",
     output: 'export',
     images: {
       remotePatterns: [
