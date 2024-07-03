@@ -3,8 +3,7 @@ import ListLayout from '@/layouts/ListLayout'
 import Card from '@/components/Card'
 import { genPageMetadata } from 'app/seo'
 import { allProjects } from 'contentlayer/generated'
-import { allCoreContent, sortPosts
-} from 'pliny/utils/contentlayer'
+import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
 
 const POSTS_PER_PAGE = 6
 
@@ -29,8 +28,7 @@ export default function Projects() {
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Projects
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          </p>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400"></p>
         </div>
         <div className="container py-12">
           Others
@@ -41,12 +39,12 @@ export default function Projects() {
                 title={d.title}
                 description={d.summary}
                 imgSrc={d.images}
-                href={'/'+d.path}
+                href={'/' + d.path}
               />
             ))}
           </div>
         </div>
-        <h2 className="text-2xl text-center font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
+        <h2 className="text-center text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-4xl md:leading-14">
           Others Stuff
         </h2>
         <div className="container py-12">
