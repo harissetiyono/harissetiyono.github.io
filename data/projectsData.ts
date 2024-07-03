@@ -7,20 +7,28 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'BisaCourse - Online Course UI App',
+    description: ``,
+    imgSrc: '/static/images/ui_design/BisaCook.png',
+    href: 'https://dribbble.com/shots/24453726-BisaCourse-Online-Course-UI-App',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'BisaFR - Face Recognition UI App',
+    description: ``,
+    imgSrc: '/static/images/ui_design/BisaFaceRecognition.png',
+    href: 'https://dribbble.com/shots/24453726-BisaCourse-Online-Course-UI-App',
+  },
+  {
+    title: 'BisaCourse - Online Course UI App',
+    description: ``,
+    imgSrc: '/static/images/ui_design/BisaCourse.png',
+    href: 'https://dribbble.com/shots/24453726-BisaCourse-Online-Course-UI-App',
+  },
+  {
+    title: 'Mobile Developer Flutter Guidelines',
+    description: ``,
+    imgSrc: '/static/images/others/flutter_guidelines_cover.jpeg',
+    href: 'https://harissetiyono.id/mobile-developer-flutter-guidelines/',
   },
 ]
 

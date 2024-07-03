@@ -2,7 +2,7 @@
 const siteMetadata = {
   title: 'Haris Setiyono - Flutter Mobile Engineer',
   author: 'Haris Setiyono',
-  headerTitle: 'SinauMobile',
+  headerTitle: 'MobDev',
   description: 'A blog about mobile development and other stuff.',
   language: 'en-us',
   theme: 'system', // system, dark or light
