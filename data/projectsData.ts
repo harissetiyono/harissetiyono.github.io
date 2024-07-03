@@ -22,7 +22,7 @@ const projectsData: Project[] = [
     title: 'BisaCourse - Online Course UI App',
     description: ``,
     imgSrc: '/static/images/ui_design/BisaCourse.png',
-    href: 'https://dribbble.com/shots/24453712-BisaFR-Face-Recognition-UI-App',
+    href: 'https://dribbble.com/shots/24453726-BisaCourse-Online-Course-UI-App',
   },
   {
     title: 'Mobile Developer Flutter Guidelines',
