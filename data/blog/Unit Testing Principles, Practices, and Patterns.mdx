@@ -1,0 +1,115 @@
+author: Vladimir Khorikov
+
+### 1. Definition of Unit Tests
+
+- **Description**: Automated tests that verify the correctness of a small piece of code, typically a
+  single function or method. Unit tests are essential for ensuring that individual components of the
+  software work as expected in isolation.
+
+### 2. Importance of Unit Testing
+
+- **Reliability**: Unit tests help ensure code reliability by catching bugs early in the development
+  process.
+- **Refactoring**: They provide a safety net that allows developers to refactor code with
+  confidence, knowing that any regressions will be detected immediately.
+
+### 3. Characteristics of Good Unit Tests
+
+- **Fast**: Unit tests should execute quickly to provide immediate feedback.
+- **Isolated**: Tests should be independent of external systems like databases, file systems, or
+  network resources to avoid flakiness.
+- **Repeatable**: Unit tests should produce the same results every time they are run.
+- **Self-Checking**: Tests should automatically verify their results without manual inspection,
+  typically using assertions.
+- **Timely**: Unit tests should be written alongside the code they are testing, not as an
+  afterthought.
+
+#### Diagram: Characteristics of Good Unit Tests
+
+Good Unit Tests |--[Fast]  
+|--[Isolated]  
+|--[Repeatable]  
+|--[Self-Checking]  
+|--[Timely]
+
+### 4. Principles of Unit Testing
+
+- **FIRST**: Good unit tests should be Fast, Independent, Repeatable, Self-Validating, and Timely.
+- **Arrange, Act, Assert (AAA)**: A pattern for structuring unit tests by setting up the test data
+  (Arrange), invoking the method under test (Act), and verifying the outcome (Assert).
+
+#### Flowchart: AAA Pattern
+
+> `[Arrange] -> [Act] -> [Assert]`
+
+### 5. Test Doubles
+
+- **Stubs**: Provide canned responses to method calls and are used when you need to isolate the code
+  under test.
+- **Mocks**: Verify interactions between objects by setting expectations on them and verifying that
+  those expectations are met.
+- **Spies**: Capture information about calls made to them, allowing you to verify that certain
+  methods were called with specific arguments.
+- **Fakes**: Have working implementations but are simplified versions of the real system, often used
+  for testing purposes to avoid dealing with complex dependencies.
+
+#### Diagram: Types of Test Doubles
+
+|--[Stubs]  
+|--[Mocks]  
+|--[Spies]  
+|--[Fakes]`
+
+### 6. Test Pyramid
+
+- **Base**: Unit Tests - The largest number of tests, focusing on individual components.
+- **Middle**: Integration Tests - Fewer tests that verify interactions between integrated
+  components.
+- **Top**: End-to-End Tests - The fewest tests, ensuring the entire system works together as
+  expected.
+
+#### Diagram: Test Pyramid
+
+. [End-to-End Tests] /\
+ [Integration Tests] /\
+ [Unit Tests]
+
+### 7. Writing Effective Unit Tests
+
+- **Single Behavior**: Focus on testing a single behavior or aspect of a method to keep tests simple
+  and clear.
+- **Descriptive Names**: Use meaningful and descriptive test names to convey the purpose of the test
+  and make it easier to understand what is being tested.
+- **Maintainability**: Keep tests maintainable by avoiding duplication, using setup/teardown methods
+  appropriately, and organizing test code well.
+
+### 8. Refactoring for Testability
+
+- **Testable Code**: Design code with testability in mind, making it easier to write unit tests.
+- **Techniques**: Use techniques like dependency injection to decouple components, facilitating
+  testing and making code more modular.
+
+### 9. Code Coverage
+
+- **Measure**: Code coverage indicates how much of the code is exercised by the tests, providing a
+  measure of test completeness.
+- **Focus**: Aim for meaningful coverage that tests critical paths and edge cases, rather than
+  striving for 100% coverage which may not be practical or valuable.
+
+### 10. Mocking and Stubbing Libraries
+
+- **Examples**: Tools like Mockito (Java), Moq (.NET), and others can simplify the creation of test
+  doubles and enhance the readability of tests by providing a fluent interface for setting up and
+  verifying expectations.
+
+### 11. Testing Legacy Code
+
+- **Characterization Test**: A technique for understanding and protecting the existing behavior of
+  legacy code during refactoring. These tests are written to capture the current behavior, so any
+  changes made during refactoring can be validated against these tests.
+
+### 12. Continuous Integration and Testing
+
+- **CI Pipeline**: Integrate unit tests into the continuous integration (CI) pipeline to ensure
+  tests are run automatically with each code change, providing early feedback on potential issues
+  and maintaining code quality.
