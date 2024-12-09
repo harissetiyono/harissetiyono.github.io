@@ -7,19 +7,19 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'BisaCourse - Online Course UI App',
+    title: 'BisaCook - Recipt Cooking UI',
     description: ``,
     imgSrc: '/static/images/ui_design/BisaCook.webp',
     href: 'https://dribbble.com/shots/24453700-BisaCook-Receipt-UI-App',
   },
   {
-    title: 'BisaFR - Face Recognition UI App',
+    title: 'BisaFR - Face Recognition UI',
     description: ``,
     imgSrc: '/static/images/ui_design/BisaFaceRecognition.webp',
     href: 'https://dribbble.com/shots/24453712-BisaFR-Face-Recognition-UI-App',
   },
   {
-    title: 'BisaCourse - Online Course UI App',
+    title: 'BisaCourse - Online Course UI',
     description: ``,
     imgSrc: '/static/images/ui_design/BisaCourse.webp',
     href: 'https://dribbble.com/shots/24453726-BisaCourse-Online-Course-UI-App',
